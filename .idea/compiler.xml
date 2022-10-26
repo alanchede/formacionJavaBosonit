@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="block1-expression-evaluator" />
         <module name="block1-process-file-and-streams" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="block1-expression-evaluator" target="17" />
       <module name="block1-process-file-and-streams" target="17" />
     </bytecodeTargetLevel>
   </component>
