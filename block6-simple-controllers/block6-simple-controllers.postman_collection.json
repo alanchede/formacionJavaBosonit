@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "ef52c6c5-bd16-4923-84dc-b5791533955b",
+		"name": "block6-simple-controllers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Alejandro\",\r\n    \"age\":\"23\",\r\n    \"city\":\"Granada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/useradd",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"useradd"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Alejandro",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "23",
+							"disabled": true
+						},
+						{
+							"key": "city",
+							"value": "Granada",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/Alejandro",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"Alejandro"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

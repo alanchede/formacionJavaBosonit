@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class PersonController {
 
     @Autowired
-    People people = new People();
+    private People people;
 
    @GetMapping(value = "/user/{name}")
     public String getUser(@PathVariable String name){

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 @Component
 public class People {
-    private ArrayList<Person> people;
+    ArrayList<Person> people = new ArrayList<>();
 
     public People() {
     }
