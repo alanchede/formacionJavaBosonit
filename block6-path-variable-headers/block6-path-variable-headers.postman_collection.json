@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "cb13e0f0-d497-467b-a822-a402d82b283e",
+		"name": "block6-path-variable-headers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/23",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user to list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"id\": \"23\",\r\n    \"name\": \"Alejandro\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user (put)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/post?id=23&name=Antonio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"post"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "23"
+						},
+						{
+							"key": "name",
+							"value": "Antonio"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
