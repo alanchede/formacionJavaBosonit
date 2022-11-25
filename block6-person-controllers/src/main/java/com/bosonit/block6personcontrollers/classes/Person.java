@@ -1,4 +1,4 @@
-package com.bosonit.block6personcontrollers;
+package com.bosonit.block6personcontrollers.classes;
 
 import org.springframework.stereotype.Component;
 
