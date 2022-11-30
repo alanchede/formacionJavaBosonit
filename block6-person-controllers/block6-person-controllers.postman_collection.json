@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "6782311b-b908-43a9-8ed1-e50e8a02fe6f",
+		"name": "block6-person-controllers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "controller1",
+			"item": [
+				{
+					"name": "controller1/addPerson",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Alejandro\",\r\n    \"age\":\"23\",\r\n    \"city\":\"Granada\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/controller1/addPerson?name=Alejandro&age=23&city=Granada",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controller1",
+								"addPerson"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Alejandro"
+								},
+								{
+									"key": "age",
+									"value": "23"
+								},
+								{
+									"key": "city",
+									"value": "Granada"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "controller1/addCity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Granada\",\r\n    \"population\": 232208\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/controller1/addCity",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controller1",
+								"addCity"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "controller2",
+			"item": [
+				{
+					"name": "controller2/getPerson",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Alejandro\",\r\n    \"age\":\"23\",\r\n    \"city\":\"Granada\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/controller2/getPerson",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controller2",
+								"getPerson"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Alejandro",
+									"disabled": true
+								},
+								{
+									"key": "age",
+									"value": "23",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Granada",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "controller2/getCity",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/controller2/getCity",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controller2",
+								"getCity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "beanController",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/controller/bean/bean2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"controller",
+								"bean",
+								"bean2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
